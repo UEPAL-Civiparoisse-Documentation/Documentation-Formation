@@ -1,39 +1,13 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
+.toc {
+  float: left;
+  width: 250px;
+  margin-right: 2em;
+  background: #f8f9fa;
   padding: 1em;
-}
-
-.sidebar {
-  flex: 0 0 250px;
-  padding-right: 1em;
-  border-right: 1px solid #ddd;
-  position: sticky;
-  top: 20px;
-  height: fit-content;
+  border-left: 4px solid #007acc;
+  font-size: 0.9em;
 }
 
 .main-content {
-  flex: 1;
-  padding-left: 2em;
-}
-
-.toc ul {
-  list-style: none;
-  padding: 0;
-}
-
-.toc li {
-  margin-bottom: 0.5em;
-}
-
-.toc a {
-  text-decoration: none;
-  color: #007acc;
-}
-
-.toc a:hover {
-  text-decoration: underline;
+  overflow: hidden; /* pour que le float soit contenu */
 }

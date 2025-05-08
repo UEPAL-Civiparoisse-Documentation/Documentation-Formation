@@ -1,13 +1,79 @@
-.toc {
-  float: left;
-  width: 250px;
-  margin-right: 2em;
-  background: #f8f9fa;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1em;
-  border-left: 4px solid #007acc;
-  font-size: 0.9em;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  padding-right: 1em;
+  border-right: 1px solid #ddd;
+  background: #f9f9f9;
+  height: fit-content;
+  position: sticky;
+  top: 1em;
 }
 
 .main-content {
-  overflow: hidden; /* pour que le float soit contenu */
+  flex: 1;
+  padding-left: 2em;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+.toc li {
+  margin-bottom: 0.5em;
+}
+.toc a {
+  text-decoration: none;
+  color: #007acc;
+}
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.toc-toggle {
+  display: none;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 1em;
+  width: 100%;
+  font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+    padding: 1em;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar.open {
+    display: block;
+  }
+
+  .main-content {
+    padding-left: 0;
+  }
+
+  .toc-toggle {
+    display: block;
+  }
 }

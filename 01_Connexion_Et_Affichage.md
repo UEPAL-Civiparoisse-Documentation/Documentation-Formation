@@ -1,3 +1,6 @@
+* Table des matières
+{:toc}
+
 # 01 - Connexion et affichage
 
 ## 001 - Connexion à la base de données

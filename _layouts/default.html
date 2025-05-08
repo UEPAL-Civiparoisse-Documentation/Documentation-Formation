@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="toc">
+        {{ content | split:"{:toc}" | last }}
+      </div>
+    </aside>
+
+    <main class="main-content">
+      {{ content | replace: '{:toc}', '' }}
+    </main>
+  </div>
+</body>
+</html>

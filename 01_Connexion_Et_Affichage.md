@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ma Page de test Connexion et Affichage
+title: Ma Page de test Connexion et Affichages
 ---
 
 * Table des matières

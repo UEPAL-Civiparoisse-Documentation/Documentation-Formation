@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ma Page de test Connexion et Affichage
+---
+
 * Table des matières
 {:toc}
 
